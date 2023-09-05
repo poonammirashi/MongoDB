@@ -31,7 +31,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-mongoose.connect('mongodb+srv://poonam:gautam23@cluster0.oeyakd6.mongodb.net/')
+mongoose.connect('mongodb+srv://poonam:<Password>@cluster0.oeyakd6.mongodb.net/')
 .then(() => {
   User.findOne().then(user => {
     if(!user) {
